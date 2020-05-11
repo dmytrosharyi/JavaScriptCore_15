@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    .complex-margin{
+      margin:15px;
+    }
+    .menu ul{
+      list-style: none;
+      margin: 0;
+      display: none;
+    }
+    .menu .title{
+      color: red;
+      cursor: pointer;
+    }
+    .menu.open ul{
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <div id="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iusto autem perspiciatis laboriosam hic, dignissimos possimus animi molestiae iure dicta at harum nihil repudiandae quisquam vero doloremque dolorum aperiam facere.</p> 
+  </div>
+  <br>
+  <input type="button" value="hideText" onclick="hideText()" class="complex-margin">
+  <br>
+  <input type="button" value="hideButton" onclick="hideButton()"class="complex-margin">
+  <div id="university" class="menu">
+    <span class="title">-Університет</span>
+    <ul>
+      <li>--кафедра ІСМ</li>
+      <li>--кафедра ЕСМ</li>
+      <li>--кафедра політології</li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
